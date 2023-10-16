@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Sunny.UI;
 namespace Lean.Scanning
 {
-    public partial class Form1 : Form
+    public partial class Scanning_InScan : UIForm
     {
-        public Form1()
+        public Scanning_InScan()
         {
             InitializeComponent();
+        }
+
+        private void Scanning_InScan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
