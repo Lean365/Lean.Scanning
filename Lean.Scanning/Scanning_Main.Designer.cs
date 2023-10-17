@@ -136,6 +136,7 @@
             this.Controls.Add(this.uiImageButton3);
             this.Controls.Add(this.uiImageButton2);
             this.Controls.Add(this.uiImageButton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Scanning_Main";
             this.Style = Sunny.UI.UIStyle.Custom;
             this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 284, 261);

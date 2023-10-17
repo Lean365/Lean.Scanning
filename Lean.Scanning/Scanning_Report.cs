@@ -22,7 +22,10 @@ namespace Lean.Scanning
         public string IptDate, IptHbnSerial, IptHbn, IptStr, Eptinv, Eptorg, EptDesc, strsn;
         [DllImport("kernel32.dll")]
         static extern uint GetTickCount();
-
+        private void Scanning_Report_Load(object sender, EventArgs e)
+        {
+            DataBindALL();
+        }
         //延时函数
         static void Delay(uint ms)
         {
@@ -293,6 +296,8 @@ namespace Lean.Scanning
             }
         }
 
+
+
         public void DataBindIN()
         {
             string DTAStockSQL = "SELECT [INS001] AS StockDate ,[INS002] AS Item ,[INS003]AS StockSerial " +
@@ -314,10 +319,7 @@ namespace Lean.Scanning
             dataGridView1.DataSource = ds.Tables[0];
         }
 
-        private void fmProcess_Load(object sender, EventArgs e)
-        {
-            DataBindALL();
-        }
+
 
         public void Iptsave()
         {

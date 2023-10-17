@@ -148,7 +148,7 @@ namespace Lean.Scanning
         {
             new System.Threading.Thread((System.Threading.ThreadStart)delegate
             {
-                Application.Run(new Scanning_Base());
+                Application.Run(new Scanning_Main());
             }).Start();
             this.Close();
         }
@@ -157,7 +157,7 @@ namespace Lean.Scanning
         {
             new System.Threading.Thread((System.Threading.ThreadStart)delegate
             {
-                Application.Run(new Scanning_Base());
+                Application.Run(new Scanning_Main());
             }).Start();
             this.Close();
         }
